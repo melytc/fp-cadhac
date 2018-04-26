@@ -47,7 +47,7 @@
 								<?= $this->Html->link('Sobre nosotros', '/aboutus', ['class' => "nav-item nav-link ttu"]); ?>
 								<?= $this->Html->link('Qué hacemos', '/quehacemos', ['class' => "nav-item nav-link ttu"]); ?>
 								<?= $this->Html->link('Comunicados', '/comunicados', ['class' => "nav-item nav-link ttu"]); ?>
-								<?= $this->Html->link('Publicaciones', '/publicaciones', ['class' => "nav-item nav-link ttu"]); ?>
+								<?= $this->Html->link('Publicaciones', ['controller' => 'Posts', 'action' => 'publicaciones'], ['class' => "nav-item nav-link ttu"]); ?>
 								<?= $this->Html->link('Desaparecidos', '/desaparecidos', ['class' => "nav-item nav-link ttu"]); ?>
 								<?= $this->Html->link('Contacto', '/contact', ['class' => "nav-item nav-link ttu"]); ?>
 							</div>
@@ -66,7 +66,7 @@
 		<section class="unete">
 			<div class="container-fluid nospace">
 				<div class="row">
-					<div class="col-md-5 img-bg d-none d-md-block" data-bg="<?= $this->Url->image('unete.jng'); ?>">
+					<div class="col-md-5 img-bg d-none d-md-block" data-bg="<?= $this->Url->image('unete.jpg'); ?>">
 					</div>
 					<div class="col-md-7 bg-primary">
 						<div class="padthis">

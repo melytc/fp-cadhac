@@ -1,5 +1,5 @@
 <div class="content quehacemos">
-	<section class="banner img-bg bg-purple-alpha" data-bg="<?= $this->Url->image('img/quehacemos/acompanamiento-2.jng'); ?>" >
+	<section class="banner img-bg bg-purple-alpha" data-bg="<?= $this->Url->image('quehacemos/acompanamiento-2.jpg'); ?>" >
 		<div class="container">
 			<h1>Qu&eacute; hacemos</h1>
 			<p>Conoce nuestros proyectos.</p>
