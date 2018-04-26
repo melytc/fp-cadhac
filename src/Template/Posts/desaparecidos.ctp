@@ -66,7 +66,7 @@
 					<div class="desaparecidos-wrap">
 						<div class="row">
 							<?php $i = 0; foreach($desaparecidos as $desaparecido): ?>
-								<?php if($i % 3): ?>
+								<?php if($i % 3 == 0): ?>
 									</div>
 									<div class="row">
 								<?php endif ?>

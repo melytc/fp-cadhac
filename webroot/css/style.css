@@ -902,6 +902,10 @@ section.two.noticias .newsgrid > .row:last-child {
   font-size: 16px;
   margin-bottom: 40px;
 }
+p.extract {
+	height: 80px;
+	overflow: hidden;
+}
 
 @media (max-width: 1200px) {
   .publicaciones .smaller-container {
