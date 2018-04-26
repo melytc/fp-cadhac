@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<!-- Responsive meta tag -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+	<?php $this->Html->charset(); ?>
+	<?= $this->Html->meta(
+		'viewport',
+		'width=device-width, initial-scale=1, shrink-to-fit=no'
+		);
+	?>
 	<title>CADHAC</title>
 
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<?= $this->Html->css(['bootstrap-grid.min.css', 'bootstrap-reboot.min.css', 'bootstrap.min.css', 'style.css']) ?>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet"> 
-
-	<link rel="stylesheet" href="css/style.css">
+	
+	<?= $this->fetch('meta') ?>
+	<?= $this->fetch('css') ?>
+	<?= $this->fetch('script') ?>
 </head>
 <body>
 	<header class="main">
 		<div class="container ">
 			<div class="row">
 				<div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start">
-					<a class="logo" href="/"><img src="img/cadhaclogo.svg" alt="CADHAC"/></a>
+					<?= $this->Html->link(
+						$this->Html->image('cadhaclogo.svg', ['alt' => 'CADHAC']),
+						'/',
+						['class' => 'logo', 'escape' => false]	
+					); ?></a>
 				</div>
 				<div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end mt-4 mt-sm-0">
 					<div class="row align-items-center">
-						<a class="language ttu" href="#">English</a>
-						<a class="btn bg-accent ttu" href="donaciones.php">Dona</a>
+						<?= $this->Html->link('Dona', '/donaciones', ['class' => 'btn bg-accent ttu']);?>
 					</div>
 				</div>
 			</div>
@@ -39,13 +43,13 @@
 						</button>
 						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 							<div class="navbar-nav">
-								<a class="nav-item nav-link ttu" href="/">Inicio</a>
-								<a class="nav-item nav-link ttu" href="aboutus.php">Sobre nosotros</a>
-								<a class="nav-item nav-link ttu" href="quehacemos.php">Qu&eacute; hacemos</a>
-								<a class="nav-item nav-link ttu d-none" href="#">Comunicados</a>
-								<a class="nav-item nav-link ttu" href="publicaciones.php">Publicaciones</a>
-								<a class="nav-item nav-link ttu d-none" href="#">Desaparecidos</a>
-								<a class="nav-item nav-link ttu" href="contact.php">Contacto</a>
+								<?= $this->Html->link('Inicio', '/', ['class' => "nav-item nav-link ttu"]);	?>
+								<?= $this->Html->link('Sobre nosotros', '/aboutus', ['class' => "nav-item nav-link ttu"]); ?>
+								<?= $this->Html->link('Qué hacemos', '/quehacemos', ['class' => "nav-item nav-link ttu"]); ?>
+								<?= $this->Html->link('Comunicados', '#', ['class' => "nav-item nav-link ttu"]); ?>
+								<?= $this->Html->link('Publicaciones', '/publicaciones', ['class' => "nav-item nav-link ttu"]); ?>
+								<?= $this->Html->link('Desaparecidos', '#', ['class' => "nav-item nav-link ttu"]); ?>
+								<?= $this->Html->link('Contacto', '/contact', ['class' => "nav-item nav-link ttu"]); ?>
 							</div>
 						</div>
 					</nav>
@@ -93,19 +97,20 @@
 						</div>
 					</div>
 		
-					<a class="mr-5" href="contact.php">Cont&aacute;ctanos</a>
+					<?= $this->Html->link('Cont&aacute;ctanos', '/contact', ['class' => 'mr-5', 'escape' => false]); ?>
 					<a href="#">Pol&iacute;tica de Privacidad</a>
 					<p class="dir"><span style="font-weight: 600;">Ciudadanos en Apoyo a los Derechos Humanos A.C.</span> | Vancouver 156, Col. Vista Hermosa, Monterrey NL M&eacute;xico | (81) 83435058</p>
 				</div>
 	
 				<div class="col-md-3 mt-5">
 					<div class="row justify-content-center justify-content-xl-end">
-						<a class="social-media" target="_blank" href="https://www.facebook.com/cadhac/"><img src="img/facebook-logo.svg" alt="Facebook"/></a>
-						<a class="social-media" target="_blank" href="https://twitter.com/cadhac"><img src="img/twitter-logo.svg" alt="Twitter"/></a>
-						<a class="social-media" target="_blank" href="https://www.youtube.com/user/CADHAC/featured"><img src="img/youtube-logo.svg" alt="YouTube"/></a>
+						<a class="social-media" target="_blank" href="https://www.facebook.com/cadhac/">
+						<?= $this->Html->image('facebook-logo.svg', ['alt' => 'Facebook'])?></a>
+						<a class="social-media" target="_blank" href="https://twitter.com/cadhac"><?= $this->Html->image('twitter-logo.svg', ['alt' => 'Twitter']) ?></a>
+						<a class="social-media" target="_blank" href="https://www.youtube.com/user/CADHAC/featured"><?= $this->Html->image('youtube-logo.svg', ['alt' => 'Youtube']) ?></a>
 					</div>
 					<div class="row justify-content-center justify-content-xl-end">
-						<a class="logo" id="bottomlogo" href="/"><img src="img/cadhaclogo.svg" alt="CADHAC"/></a>
+						<a class="logo" id="bottomlogo" href="/"><?= $this->Html->image('cadhac-logo.svg', ['alt' => 'CADHAC']) ?></a>
 					</div>
 				</div>
 			</div>
