@@ -30,10 +30,10 @@
 			<div class="col-lg-3">
 				<aside class="sidebar">
 					<section class="search">
-						<form action="#" class="search-form">
-							<input type="text" name="q" id="query" placeholder="Buscar...">
-							<button type="submit" class="submit btn bg-lightgreen">Buscar</button>
-						</form>
+						<?= $this->Form->create(null, ['url' => ['controller' => 'Posts', 'action' => 'searchcomunicados'], 'type' => 'get']); ?>
+						<?= $this->Form->control('q', ['label' => false]); ?>
+						<?= $this->Form->button('Buscar', ['class' => 'submit btn bg-lightgreen']) ?>
+						<?= $this->Form->end(); ?>
 					</section>
 					<section class="category-filter">
 						<p class="label">Categor&iacute;as</p>

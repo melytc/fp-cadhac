@@ -53,15 +53,15 @@
 					</aside>
 				</div>
 				<div class="col-md-9 pl-0 pl-md-5">
-					<form action="#" class="search-alpha-form">
-						<input type="text" name="q" id="q" placeholder="Buscar">
+					<?= $this->Form->create(null, ['url' => ['controller' => 'Posts', 'action' => 'searchdesaparecidos'], 'class' => 'search-alpha-form', 'type' => 'get']); ?>
+					<?= $this->Form->control('q',['label' => false]); ?>
 						<i class="fa fa-search">
 							<svg id="i-search" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
 							    <circle cx="14" cy="14" r="12" />
 							    <path d="M23 23 L30 30"  />
 							</svg>
 						</i>
-					</form>
+					<?= $this->Form->end(); ?>
 			
 					<div class="desaparecidos-wrap">
 						<div class="row">

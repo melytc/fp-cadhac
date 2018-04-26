@@ -41,4 +41,19 @@ class PostsController extends AppController
 		$this->set('publicaciones', $this->paginate($query));
 	}
 
+	public function searchComunicados()
+	{
+		$search = $this->request->getQuery('q');
+		$query = $this->Posts->find('all')->where(['category_id' => 3, 'title LIKE' => '%'.$search.'%']);
+		$this->set('comunicados', $query);
+		$this->viewBuilder()->template('comunicados');
+	}
+
+	public function searchDesaparecidos()
+	{
+		$search = $this->request->getQuery('q');
+		$query = $this->Posts->find('all')->where(['category_id' => 2, 'title LIKE' => '%'.$search.'%']);
+		$this->set('desaparecidos', $query);
+		$this->viewBuilder()->template('desaparecidos');
+	}
 }
