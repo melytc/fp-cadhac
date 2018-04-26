@@ -1,5 +1,5 @@
 <div class="publicaciones content">
-	<section class="banner img-bg bg-black-alpha" data-bg="img/testbg.png">
+	<section class="banner img-bg bg-black-alpha" data-bg="<?= $this->Url->image('testbg.png'); ?>">
 		<div class="container">
 			<h2>Informe de desaparici&oacute;n forzada en Nuevo Le&oacute;n de 2009 a 2016</h2>
 			<a href="publicaciones/desapariciones-nl-2009-a-2016.pdf" download class="btn bg-purple2">Descarga el reporte</a>

@@ -1,5 +1,5 @@
 <div class="aboutus content">
-	<section class="banner img-bg bg-black-alpha" data-bg="img/sobrenosotros.jpg">
+	<section class="banner img-bg bg-black-alpha" data-bg="<?= $this->Url->image('sobrenosotros.jpg'); ?>">
 		<div class="container">
 			<h1 class="white">Sobre nosotros</h1>
 			<p class="subtitle white">Luchamos d&iacute;a a d&iacute;a por los derechos humanos</p>
@@ -27,7 +27,7 @@
 	<section class="acknowledgements">
 		<div class="container-fluid">
 			<div class="row nog bg-darkblue">
-				<div class="col-md-5 img-bg consuelo" data-bg="img/hmnaConsuelo.jpg">
+				<div class="col-md-5 img-bg consuelo" data-bg="<?= $this->Url->image('hmnaConsuelo.jpg'); ?>">
 					<!-- <img class="big-photo" src="img/hmnaConsuelo.jpg"></img> -->
 				</div>
 				<div class="col-md-7">
@@ -47,7 +47,7 @@
 	<section class="reconocimientos">
 		<div class="container-fluid">
 			<div class="row nog">
-				<div class="col-md-5 img-bg" data-bg="img/reconocimiento-1.jpg">
+				<div class="col-md-5 img-bg" data-bg="<?= $this->Url->image('reconocimiento-1.jpg'); ?>">
 					<!-- <img class="big-photo" src="img/pexels.jpg" alt="Title"> -->
 				</div>
 				<div class="col-md-7">

@@ -1,5 +1,5 @@
 <div class="content desaparecidos">
-	<section class="banner bg-black-alpha img-bg" data-bg="img/pexels.jpg">
+	<section class="banner bg-black-alpha img-bg" data-bg="<?= $this->Url->image('testbg.png'); ?>">
 		<div class="container">
 			<h1 class="white">Desaparecidos</h1>
 			<p class="subtitle white">&iquest;D&oacute;nde est&aacute;n?</p>

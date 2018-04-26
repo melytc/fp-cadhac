@@ -1,5 +1,5 @@
 <div class="content quehacemos">
-	<section class="banner img-bg bg-purple-alpha" data-bg="img/quehacemos/acompanamiento-2.jpg">
+	<section class="banner img-bg bg-purple-alpha" data-bg="<?= $this->Url->image('img/quehacemos/acompanamiento-2.jng'); ?>" >
 		<div class="container">
 			<h1>Qu&eacute; hacemos</h1>
 			<p>Conoce nuestros proyectos.</p>
@@ -58,12 +58,12 @@
 				</div>
 				<div class="col-md-5 photo-grid">
 					<div class="row" style="height: 50%;">
-						<div class="col img-bg" data-bg="img/quehacemos/acompanamiento-1.jpg"></div>
-						<div class="col img-bg" data-bg="img/quehacemos/acompanamiento-2.jpg"></div>
+						<div class="col img-bg" data-bg="<?= $this->Url->image('quehacemos/acompanamiento-1.jpg'); ?>"></div>
+						<div class="col img-bg" data-bg="<?= $this->Url->image('quehacemos/acompanamiento-2.jpg'); ?>"></div>
 					</div>
 					<div class="row" style="height: 50%;">
-						<div class="col img-bg" data-bg="img/quehacemos/acompanamiento-3.jpg"></div>
-						<div class="col img-bg" data-bg="img/quehacemos/acompanamiento-4.jpg"></div>
+						<div class="col img-bg" data-bg="<?= $this->Url->image('quehacemos/acompanamiento-3.jpg'); ?>"></div>
+						<div class="col img-bg" data-bg="<?= $this->Url->image('quehacemos/acompanamiento-4.jpg'); ?>"></div>
 					</div>
 					<div class="overlay-bg bg-lightgreen"></div>
 				</div>
@@ -100,12 +100,12 @@
 				</div>
 				<div class="col-md-5 order-1 photo-grid">
 					<div class="row" style="height: 50%;">
-						<div class="col img-bg" data-bg="img/quehacemos/promocionydefensa.jpg"></div>
-						<div class="col img-bg" data-bg="img/quehacemos/monitoreo.jpg"></div>
+						<div class="col img-bg" data-bg="<?= $this->Url->image('quehacemos/promocionydefensa.jpg'); ?>"></div>
+						<div class="col img-bg" data-bg="<?= $this->Url->image('quehacemos/monitoreo.jpg'); ?>"></div>
 					</div>
 					<div class="row" style="height: 50%;">
-						<div class="col img-bg" data-bg="img/quehacemos/sanAngel.jpg"></div>
-						<div class="col img-bg" data-bg="img/quehacemos/juridico.jpg"></div>
+						<div class="col img-bg" data-bg="<?= $this->Url->image('quehacemos/sanAngel.jpg'); ?>"></div>
+						<div class="col img-bg" data-bg="<?= $this->Url->image('quehacemos/juridico.jpg'); ?>"></div>
 					</div>
 					<div class="overlay-bg bg-secondary"></div>
 				</div>

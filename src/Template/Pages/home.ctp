@@ -10,20 +10,19 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-			<img class="d-block w-100" src="img/banner-1.jpg" alt="First slide">
+			<?= $this->Html->image('banner-1.jpg', ['alt' => "First slide", 'class' => 'd-block w-100']); ?>
 			</div>
 			<div class="carousel-item">
-			<img class="d-block w-100" src="img/banner-2.jpg" alt="Second slide">
+			<?= $this->Html->image('banner-2.jpg', ['alt' => "Second slide", 'class' => 'd-block w-100']); ?>
 			</div>
 			<div class="carousel-item">
-			<img class="d-block w-100" src="img/banner-3.jpg" alt="Third slide">
+			<?= $this->Html->image('banner-3.jpg', ['alt' => "Third slide", 'class' => 'd-block w-100']); ?>
 			</div>
 			<div class="carousel-item">
-			<img class="d-block w-100" src="img/banner-4.jpg" alt="Forth slide">
+			<?= $this->Html->image('banner-4.jpg', ['alt' => "Forth slide", 'class' => 'd-block w-100']); ?>
 			</div>
 			<div class="carousel-item">
-			<img class="d-block w-100" src="img/banner-5.jpg" alt="Fifth slide">
-			</div>
+			<?= $this->Html->image('banner-5.jpg', ['alt' => "Fifth slide", 'class' => 'd-block w-100']); ?></div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
