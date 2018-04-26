@@ -1,7 +1,7 @@
 <?php
-namespace App\Controller;
+namespace App\Controller\Admin;
 
-use App\Controller\AppController;
+use App\Controller\Admin\AdminController;
 
 /**
  * Tags Controller
@@ -10,7 +10,7 @@ use App\Controller\AppController;
  *
  * @method \App\Model\Entity\Tag[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
-class TagsController extends AppController
+class TagsController extends AdminController
 {
 
     /**

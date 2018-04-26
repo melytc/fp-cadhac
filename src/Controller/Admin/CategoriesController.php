@@ -1,7 +1,6 @@
 <?php
-namespace App\Controller;
-
-use App\Controller\AppController;
+namespace App\Controller\Admin;
+use App\Controller\Admin\AdminController;
 
 /**
  * Categories Controller
@@ -10,7 +9,7 @@ use App\Controller\AppController;
  *
  * @method \App\Model\Entity\Category[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
-class CategoriesController extends AppController
+class CategoriesController extends AdminController
 {
 
     /**
